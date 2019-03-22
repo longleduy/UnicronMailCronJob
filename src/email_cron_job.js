@@ -24,6 +24,7 @@ try {
                 } catch (error) {
                     await emailBufferModel.findByIdAndUpdate({ _id: emailBuffer._id }, { $set: { status: 'failed' } })
                     console.log(`Error: Failed to send message to - ${email}`);
+                    console.log(error);
                 }
             })
         }
