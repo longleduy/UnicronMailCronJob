@@ -1,0 +1,32 @@
+{
+  "name": "unicron_mail_job",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/email_cron_job.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longleduy/UnicronMailCronJob.git"
+  },
+  "keywords": [
+    "unicron_email"
+  ],
+  "author": "LongLD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/longleduy/UnicronMailCronJob/issues"
+  },
+  "homepage": "https://github.com/longleduy/UnicronMailCronJob#readme",
+  "dependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.2",
+    "agenda": "^2.0.2",
+    "dotenv": "^7.0.0",
+    "mongoose": "^5.4.19",
+    "nodemailer": "^5.1.1"
+  }
+}
